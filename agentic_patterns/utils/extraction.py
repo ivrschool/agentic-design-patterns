@@ -34,6 +34,7 @@ def extract_tag_content(text: str, tag: str) -> TagContentResult:
 
     # Use findall to capture all content between the specified tag
     matched_contents = re.findall(tag_pattern, text, re.DOTALL)
+    print(matched_contents)
 
     # Return the dataclass instance with the result
     return TagContentResult(
